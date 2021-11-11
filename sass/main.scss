@@ -1,0 +1,778 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+// start mixing area
+
+@mixin serviceboX {
+    border: 0.4rem solid white;
+    text-align:start;
+    color: white;
+    font-family: italic;
+    
+    details{
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+
+@mixin closetable {
+    font-size: 3rem;
+    &:hover{
+        color: rgba(219, 166, 18, 0.719) !important;
+        font-size: 3.4rem !important;
+     }
+    
+}
+@mixin company {
+    text-transform: capitalize;
+    color: white;
+    font-family: italic;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+@mixin dissplays {
+    display: none;
+    margin-top:  7rem;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+}
+
+
+// start mixing area
+
+
+
+
+
+#header{
+    z-index: 22 !important;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(32, 32, 32, 0.26), rgba(44, 43, 51,0.61));
+}
+#sm1{
+    font-size:1.2rem;
+    color: white;
+}
+#sm1{
+    position: relative;
+    animation: travil1 ease-in-out;
+    animation-duration: 9s;
+    transition-timing-function: ease;
+}
+@keyframes travil1 {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:300px; top:0px;}
+    /* 50%  {color:blue;}
+    75%  {color:green;} */
+    100% {color:rgba(230, 221, 221, 0.925); left:0px; top:0px;}
+  }
+
+
+
+#sm2{
+    font-size:1.2rem;
+    color: white;
+}
+#sm2{
+    position: relative;
+    animation: travil2 ease-in-out;
+    animation-duration: 10s;
+    transition-timing-function: ease;
+}
+@keyframes travil2 {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:300px; top:0px;}
+    100% {color:rgb(236, 229, 229); left:0px; top:0px;}
+  }
+
+
+// use navbar
+
+#broadband{
+    font-size: large;
+    margin-top: -0.6rem;
+
+    .numb{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: -1rem;
+    }:hover{
+        color: white;
+    }
+}
+.smal{
+    font-size:1.5rem;
+}
+
+#ancerr>li> a{
+    font-size: large;
+    color: white !important;
+    font-family: italic;
+    text-transform: capitalize;
+}
+
+#nav{
+    background-image: linear-gradient(to right, rgba(53, 11, 21,0.452), rgba(44, 43, 51,0.61));
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+}
+
+
+// use nav icon area 
+// start company
+
+#displaye1{
+    display: none;
+    margin-top:  7rem;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+
+    #company1{
+        background-image: linear-gradient(to right, rgba(34, 30, 31, 0.452), rgba(44, 43, 51,0.61));
+    }
+}
+
+#comp{
+    @include company;
+
+    a{
+        color: white !important;
+        font-size: 1.4rem;
+    &:hover{
+        color:rgba(219, 166, 18, 0.719) !important;
+    }
+    }
+
+}
+
+#comp1{
+    color: white;
+    padding: 7rem;
+    border-left: 0.1rem solid white;
+}
+
+// end company
+//  offers
+
+#displaye2{
+   @include dissplays;
+   #internettv{
+    background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51,0.61));
+    color: white;
+    text-transform: capitalize;
+    padding: 3rem;
+   }
+}
+
+// use contact
+#displaye3{
+   @include dissplays;
+
+   #contactdisplay{
+    background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51,0.61));
+    color: white;
+    text-transform: capitalize;
+    padding: 3rem;
+   }
+}
+
+
+// use contact
+#displaye4{
+   @include dissplays;
+   #complaindisplay{
+    background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51,0.61));
+    color: white;
+    text-transform: capitalize;
+    font-family: italic;
+   }
+   input{
+       width: 70%;
+       border: 0.1rem solid white;
+   }
+
+   }
+
+
+
+
+////////////////////////  start small box
+#servicesDIrectV, #servicesptrum, #serviceoptimum, #servicecox{
+    display: none;  
+}
+
+#box21{
+    display: none;
+    margin-top:  7rem;
+    z-index: 11;
+    position: absolute;
+    float: right !important;
+}
+
+#animat{
+    background:rgba(32, 32, 31, 0.616) !important;
+    position:absolute;
+    z-index: 1;
+    margin-top: 7rem;
+
+    #fan{
+        display: none;
+        font-size: 4rem;
+        float: right;
+        color: white;
+        transition: 2s ease; 
+    }
+     #fan:hover{
+        transform: rotate(70deg);
+    }
+
+}
+
+#small-box{
+    display: none;
+    margin-top:  7rem;
+    z-index: 11;
+}
+
+// /////start directTV
+
+#direct-col12{
+    @include serviceboX;
+}
+
+#spectrum-col12{
+    @include serviceboX;
+}
+#optimum-col12{
+    @include serviceboX;
+}
+#cox-col12{
+    @include serviceboX;
+}
+
+// /////start directTV table
+
+
+
+
+table{
+    border : 0.1rem solid gray;
+}
+th{ 
+    padding-right: 4rem;
+    padding: 2rem;
+    text-transform: capitalize;
+    font-family: italic;
+    border-bottom: 0.1rem solid gray;
+}
+th,td{
+    border-left: 0.1rem solid gray;
+    vertical-align: baseline !important;
+}
+td{
+    text-transform: capitalize;
+    border-bottom: 0.1rem solid gray;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding: 1.1rem;
+}
+
+// close button
+#closeDIRECTV{
+    @include closetable;
+};
+#closespectrum{
+    @include closetable;
+};
+#closeoptimum{
+    @include closetable;
+}
+#closecox{
+    @include closetable;
+}
+
+// /////end directTV table
+
+
+////////////////////////////////// end of small box
+
+
+  /* use video div */
+
+#video{
+      width: 100%;
+      height: 94vh;
+      object-fit: cover;
+      position: relative;
+  }
+  /* use video div */
+
+
+#explore{
+     top: 21rem;
+    color: white !important;
+    h2{
+        font-size: 5.2rem;
+        font-weight:700;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+}
+
+
+
+#backgrondimage{
+    background-image: url(/image/curser/sec1.jpg) !important;
+    width: 100%;
+    height: 80%;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        color: white;
+        font-family: italic;
+    }
+}
+
+#LKIO9{
+    h5{
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+// start benifits image
+
+#benifits{
+    background-image: url(/image/binifits/CallTeam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100% !important;
+
+    #benifits-card{
+        background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51,0.61));
+        color: white;
+        font-family: italic;
+
+        h1{
+            font-size: 3.4rem;
+        }
+        li{
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+// end benifits image
+
+
+//start best packages
+
+#bestpackages{
+    background-image: url(/image/bestpackages/best3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+    width: 100%;
+    font-family: italic;
+
+    h1{
+        color: white;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    #textdecoration{
+        text-decoration: underline;
+    }
+    li{
+        list-style-type: none;
+    }
+
+    #backATT{
+        background-image: linear-gradient(to right, rgba(31, 26, 27, 0.418), rgba(30, 30, 36, 0.507));
+        border-radius: 2rem;
+    }
+    #hh{
+        font-size: 1.1rem !important;
+        margin-left: -6rem !important;
+    }
+}
+
+//end best packages
+
+//start connected
+
+#bgGray{
+    background-image: linear-gradient(to right, rgba(31, 26, 27, 0.671), rgba(30, 30, 36, 0.589));
+    font-family: italic;
+    color: white;
+    h2{
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    h6{
+        color: white;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+//end connected
+
+//start how i can help you
+#help{
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+    }
+    i{
+        font-size: 4rem;
+        h4{
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+//start footer
+
+#footer{
+    background-image: url(/image/footer/dark2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    color: white;
+
+    #icon{
+        background-image: linear-gradient(to right, rgba(141, 139, 140, 0.671), rgba(102, 102, 138, 0.589));
+    }
+    h1{
+        font-size: 5rem;
+        font-weight: 500;
+    }
+    i{
+       font-size: 7rem;
+    }
+    p{
+        font-size: 2rem;
+        margin-bottom: -2.5rem !important;
+    }
+}
+
+#buttonRow{
+    button{
+        font-size: 2.3rem;
+        margin-left: 3rem;
+        text-transform: capitalize;
+    }
+    #clickcall{
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    #feedback{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #looking{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* use media query because responsive font-size */
+
+@media(max-width:1024px){
+    html{
+        font-size: 60%;
+    }
+    #explore{
+        top: 20rem;
+    }
+
+    #video{
+        height: 50% !important;
+    }
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    #explore{
+        top: 20rem;
+    }
+}
+
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    video{
+        height: 70% !important;
+    }
+
+    #explore{
+        top: 20rem;
+    }
+    h2{
+        font-size: 4rem !important;
+    }
+    p{
+        font-size: 3rem;
+    }
+}
+@media(max-width:411px){
+    html{
+        font-size: 40%;
+    }
+    #explore{
+        top: 15rem !important;
+        h2{
+            font-size: 2.8rem !important;
+        }
+
+        #backATT{
+            padding-top: 3rem;
+        }
+    }
+
+    #benifits-card{
+        h2{
+            font-size: 2.5rem !important;
+        }
+        li{
+            font-size: 2rem !important;
+            padding-top: 1rem;
+        }
+    }
+    #content{
+        margin-top:2rem;
+    }
+    #content1{
+        width: 50%;
+        display: inline-flex;
+        margin-top: 3rem;
+    }
+    #icon{
+        width: 50%;
+        margin-top: -12rem;
+        margin-left: -2.2rem;
+        text-align: center;
+    }
+    #foterh2{
+        h2{
+         padding-top: 1rem !important;
+        }
+    }
+    #looking{
+        margin-top: 1.4rem;
+    }
+    #iconin{
+        i{
+text-align: start !important;           ;
+        }
+    }
+}
+
+@media(max-width:360px){
+    html{
+        font-size: 40%;
+    }
+    #sm1{
+        font-size: 2rem;
+        z-index: 111;
+        display: none;
+    }
+    #sm1{
+        color: wheat;
+        position: relative;
+        animation: travil;
+        z-index: 111;
+    }
+
+    #sm2{
+        display: none !important;
+        font-size: 2rem;
+        z-index: 111;
+    }
+    #sm2{
+        color: wheat;
+        position: relative;
+        animation: travil;
+    }
+    #video{
+        height: 100% !important;
+       // margin-top: -22rem !important;
+    }
+    #explore{
+        top: 9rem !important; 
+        h2{
+            font-size: 3rem !important;
+        }
+    }
+    #navbar{
+        position:absolute;
+    }
+    #nav{
+        margin-top: -1.9rem;
+    }
+    #box{
+        display: none;
+    }
+    #barsize{
+        font-size: 3rem;
+    }
+    th{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    #backgroundpic{
+       height: 63%;
+    }
+
+
+    #benifits-card{
+        h2{
+            font-size: 2.5rem !important;
+        }
+        li{
+            font-size: 2rem !important;
+            padding-top: 1rem;
+        }
+    }
+
+    #smalltop{
+        margin-top: 3rem !important;
+    }
+    #content{
+        margin-top: 2rem;
+    }
+    #content1{
+        width: 50%;
+        display: inline-flex;
+        margin-top: 3rem;
+    }
+   #icon{
+       width: 50%;
+       margin-top: -12rem;
+       margin-left: -2.2rem;
+       text-align: center;
+   }
+   #foterh2{
+       h2{
+        padding-top: 1rem !important;
+       }
+   }
+   #looking{
+    margin-top: 1.4rem;
+}
+}
+
+@media(max-width:320px){
+    html{
+        font-size: 35%;
+    }
+    #explore{
+        top: 12rem !important;
+        h2{
+            font-size: 2.8rem !important;
+        }
+    }
+
+    #benifits-card{
+        h2{
+            font-size: 2.5rem !important;
+        }
+        li{
+            font-size: 2rem !important;
+            padding-top: 1rem;
+        }
+    }
+    #smalltop{
+        margin-top: 3rem !important;
+    }
+    #content{
+        margin-top: 2rem;
+    }
+    #content1{
+        width: 50%;
+        display: inline-flex;
+        margin-top: 3rem;
+    }
+    #icon{
+        width: 50%;
+        margin-top: -12rem;
+        margin-left: -2.2rem;
+        text-align: center;
+    }
+    #foterh2{
+        h2{
+         padding-top: 1rem !important;
+        }
+    }
+    #looking{
+        margin-top: 1.4rem;
+    }
+    
+}    
+
+#iconin{
+
+    i{
+        font-size: 2rem;
+        padding-left: 2.4rem;
+    }
+}
+#footer{
+    p{
+        font-size: 1.3rem;
+        padding-top: 1rem;
+        margin-left: -23rem !important;
+    }
+}

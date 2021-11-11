@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+#sm1{
+    font-size:1.2rem;
+    color: white;
+}
+#sm1{
+    position: relative;
+    animation: travil1 ease-in-out;
+    animation-duration: 9s;
+    transition-timing-function: ease;
+}
+@keyframes travil1 {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:300px; top:0px;}
+    /* 50%  {color:blue;}
+    75%  {color:green;} */
+    100% {color:rgba(230, 221, 221, 0.925); left:0px; top:0px;}
+  }
+
+
+
+#sm2{
+    font-size:1.2rem;
+    color: white;
+}
+#sm2{
+    position: relative;
+    animation: travil2 ease-in-out;
+    animation-duration: 10s;
+    transition-timing-function: ease;
+}
+@keyframes travil2 {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:300px; top:0px;}
+    /* 50%  {color:blue;}
+    75%  {color:green;} */
+    100% {color:rgb(236, 229, 229); left:0px; top:0px;}
+  }
+
+
+
+  /* use video div */
+  iframe{
+      z-index: 11;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* use media query because responsive font-size */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+@media(max-width:360px){
+    html{
+        font-size: 30%;
+    }
+    #sm1{
+        font-size: 2rem;
+    }
+    #sm1{
+        color: wheat;
+        position: relative;
+        animation: travil;
+    }
+
+    #sm2{
+        font-size: 2rem;
+    }
+    #sm2{
+        color: wheat;
+        position: relative;
+        animation: travil;
+    }
+}

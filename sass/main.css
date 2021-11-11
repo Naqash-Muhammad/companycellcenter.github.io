@@ -1,0 +1,781 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#header {
+  z-index: 22 !important;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.26), rgba(44, 43, 51, 0.61));
+}
+
+#sm1 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#sm1 {
+  position: relative;
+  -webkit-animation: travil1 ease-in-out;
+          animation: travil1 ease-in-out;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  transition-timing-function: ease;
+}
+
+@-webkit-keyframes travil1 {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 300px;
+    top: 0px;
+  }
+  /* 50%  {color:blue;}
+  75%  {color:green;} */
+  100% {
+    color: rgba(230, 221, 221, 0.925);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes travil1 {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 300px;
+    top: 0px;
+  }
+  /* 50%  {color:blue;}
+  75%  {color:green;} */
+  100% {
+    color: rgba(230, 221, 221, 0.925);
+    left: 0px;
+    top: 0px;
+  }
+}
+#sm2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#sm2 {
+  position: relative;
+  -webkit-animation: travil2 ease-in-out;
+          animation: travil2 ease-in-out;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  transition-timing-function: ease;
+}
+
+@-webkit-keyframes travil2 {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 300px;
+    top: 0px;
+  }
+  100% {
+    color: #ece5e5;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes travil2 {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 300px;
+    top: 0px;
+  }
+  100% {
+    color: #ece5e5;
+    left: 0px;
+    top: 0px;
+  }
+}
+#broadband {
+  font-size: large;
+  margin-top: -0.6rem;
+}
+#broadband .numb {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -1rem;
+}
+#broadband :hover {
+  color: white;
+}
+
+.smal {
+  font-size: 1.5rem;
+}
+
+#ancerr > li > a {
+  font-size: large;
+  color: white !important;
+  font-family: italic;
+  text-transform: capitalize;
+}
+
+#nav {
+  background-image: linear-gradient(to right, rgba(53, 11, 21, 0.452), rgba(44, 43, 51, 0.61));
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+
+#displaye1 {
+  display: none;
+  margin-top: 7rem;
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+#displaye1 #company1 {
+  background-image: linear-gradient(to right, rgba(34, 30, 31, 0.452), rgba(44, 43, 51, 0.61));
+}
+
+#comp {
+  text-transform: capitalize;
+  color: white;
+  font-family: italic;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+#comp a {
+  color: white !important;
+  font-size: 1.4rem;
+}
+#comp a:hover {
+  color: rgba(219, 166, 18, 0.719) !important;
+}
+
+#comp1 {
+  color: white;
+  padding: 7rem;
+  border-left: 0.1rem solid white;
+}
+
+#displaye2 {
+  display: none;
+  margin-top: 7rem;
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+#displaye2 #internettv {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51, 0.61));
+  color: white;
+  text-transform: capitalize;
+  padding: 3rem;
+}
+
+#displaye3 {
+  display: none;
+  margin-top: 7rem;
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+#displaye3 #contactdisplay {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51, 0.61));
+  color: white;
+  text-transform: capitalize;
+  padding: 3rem;
+}
+
+#displaye4 {
+  display: none;
+  margin-top: 7rem;
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+}
+#displaye4 #complaindisplay {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51, 0.61));
+  color: white;
+  text-transform: capitalize;
+  font-family: italic;
+}
+#displaye4 input {
+  width: 70%;
+  border: 0.1rem solid white;
+}
+
+#servicesDIrectV, #servicesptrum, #serviceoptimum, #servicecox {
+  display: none;
+}
+
+#box21 {
+  display: none;
+  margin-top: 7rem;
+  z-index: 11;
+  position: absolute;
+  float: right !important;
+}
+
+#animat {
+  background: rgba(32, 32, 31, 0.616) !important;
+  position: absolute;
+  z-index: 1;
+  margin-top: 7rem;
+}
+#animat #fan {
+  display: none;
+  font-size: 4rem;
+  float: right;
+  color: white;
+  transition: 2s ease;
+}
+#animat #fan:hover {
+  transform: rotate(70deg);
+}
+
+#small-box {
+  display: none;
+  margin-top: 7rem;
+  z-index: 11;
+}
+
+#direct-col12 {
+  border: 0.4rem solid white;
+  text-align: start;
+  color: white;
+  font-family: italic;
+}
+#direct-col12 details {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#spectrum-col12 {
+  border: 0.4rem solid white;
+  text-align: start;
+  color: white;
+  font-family: italic;
+}
+#spectrum-col12 details {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#optimum-col12 {
+  border: 0.4rem solid white;
+  text-align: start;
+  color: white;
+  font-family: italic;
+}
+#optimum-col12 details {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#cox-col12 {
+  border: 0.4rem solid white;
+  text-align: start;
+  color: white;
+  font-family: italic;
+}
+#cox-col12 details {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+table {
+  border: 0.1rem solid gray;
+}
+
+th {
+  padding-right: 4rem;
+  padding: 2rem;
+  text-transform: capitalize;
+  font-family: italic;
+  border-bottom: 0.1rem solid gray;
+}
+
+th, td {
+  border-left: 0.1rem solid gray;
+  vertical-align: baseline !important;
+}
+
+td {
+  text-transform: capitalize;
+  border-bottom: 0.1rem solid gray;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding: 1.1rem;
+}
+
+#closeDIRECTV {
+  font-size: 3rem;
+}
+#closeDIRECTV:hover {
+  color: rgba(219, 166, 18, 0.719) !important;
+  font-size: 3.4rem !important;
+}
+
+#closespectrum {
+  font-size: 3rem;
+}
+#closespectrum:hover {
+  color: rgba(219, 166, 18, 0.719) !important;
+  font-size: 3.4rem !important;
+}
+
+#closeoptimum {
+  font-size: 3rem;
+}
+#closeoptimum:hover {
+  color: rgba(219, 166, 18, 0.719) !important;
+  font-size: 3.4rem !important;
+}
+
+#closecox {
+  font-size: 3rem;
+}
+#closecox:hover {
+  color: rgba(219, 166, 18, 0.719) !important;
+  font-size: 3.4rem !important;
+}
+
+/* use video div */
+#video {
+  width: 100%;
+  height: 94vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+/* use video div */
+#explore {
+  top: 21rem;
+  color: white !important;
+}
+#explore h2 {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+#explore p {
+  font-size: 1.9rem;
+}
+
+#backgrondimage {
+  background-image: url(/image/curser/sec1.jpg) !important;
+  width: 100%;
+  height: 80%;
+}
+#backgrondimage h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  font-family: italic;
+}
+
+#LKIO9 h5 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+#benifits {
+  background-image: url(/image/binifits/CallTeam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100% !important;
+}
+#benifits #benifits-card {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.452), rgba(44, 43, 51, 0.61));
+  color: white;
+  font-family: italic;
+}
+#benifits #benifits-card h1 {
+  font-size: 3.4rem;
+}
+#benifits #benifits-card li {
+  font-size: 1.3rem;
+}
+
+#bestpackages {
+  background-image: url(/image/bestpackages/best3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  font-family: italic;
+}
+#bestpackages h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+#bestpackages h2 {
+  font-size: 3rem;
+}
+#bestpackages #textdecoration {
+  text-decoration: underline;
+}
+#bestpackages li {
+  list-style-type: none;
+}
+#bestpackages #backATT {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.418), rgba(30, 30, 36, 0.507));
+  border-radius: 2rem;
+}
+#bestpackages #hh {
+  font-size: 1.1rem !important;
+  margin-left: -6rem !important;
+}
+
+#bgGray {
+  background-image: linear-gradient(to right, rgba(31, 26, 27, 0.671), rgba(30, 30, 36, 0.589));
+  font-family: italic;
+  color: white;
+}
+#bgGray h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+#bgGray h6 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+#help h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+}
+#help i {
+  font-size: 4rem;
+}
+#help i h4 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+#footer {
+  background-image: url(/image/footer/dark2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: white;
+}
+#footer #icon {
+  background-image: linear-gradient(to right, rgba(141, 139, 140, 0.671), rgba(102, 102, 138, 0.589));
+}
+#footer h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+#footer i {
+  font-size: 7rem;
+}
+#footer p {
+  font-size: 2rem;
+  margin-bottom: -2.5rem !important;
+}
+
+#buttonRow button {
+  font-size: 2.3rem;
+  margin-left: 3rem;
+  text-transform: capitalize;
+}
+#buttonRow #clickcall {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+#buttonRow #feedback {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#buttonRow #looking {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* use media query because responsive font-size */
+@media (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+
+  #explore {
+    top: 20rem;
+  }
+
+  #video {
+    height: 50% !important;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+
+  #explore {
+    top: 20rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  video {
+    height: 70% !important;
+  }
+
+  #explore {
+    top: 20rem;
+  }
+
+  h2 {
+    font-size: 4rem !important;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 411px) {
+  html {
+    font-size: 40%;
+  }
+
+  #explore {
+    top: 15rem !important;
+  }
+  #explore h2 {
+    font-size: 2.8rem !important;
+  }
+  #explore #backATT {
+    padding-top: 3rem;
+  }
+
+  #benifits-card h2 {
+    font-size: 2.5rem !important;
+  }
+  #benifits-card li {
+    font-size: 2rem !important;
+    padding-top: 1rem;
+  }
+
+  #content {
+    margin-top: 2rem;
+  }
+
+  #content1 {
+    width: 50%;
+    display: inline-flex;
+    margin-top: 3rem;
+  }
+
+  #icon {
+    width: 50%;
+    margin-top: -12rem;
+    margin-left: -2.2rem;
+    text-align: center;
+  }
+
+  #foterh2 h2 {
+    padding-top: 1rem !important;
+  }
+
+  #looking {
+    margin-top: 1.4rem;
+  }
+
+  #iconin i {
+    text-align: start !important;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 40%;
+  }
+
+  #sm1 {
+    font-size: 2rem;
+    z-index: 111;
+    display: none;
+  }
+
+  #sm1 {
+    color: wheat;
+    position: relative;
+    -webkit-animation: travil;
+            animation: travil;
+    z-index: 111;
+  }
+
+  #sm2 {
+    display: none !important;
+    font-size: 2rem;
+    z-index: 111;
+  }
+
+  #sm2 {
+    color: wheat;
+    position: relative;
+    -webkit-animation: travil;
+            animation: travil;
+  }
+
+  #video {
+    height: 100% !important;
+  }
+
+  #explore {
+    top: 9rem !important;
+  }
+  #explore h2 {
+    font-size: 3rem !important;
+  }
+
+  #navbar {
+    position: absolute;
+  }
+
+  #nav {
+    margin-top: -1.9rem;
+  }
+
+  #box {
+    display: none;
+  }
+
+  #barsize {
+    font-size: 3rem;
+  }
+
+  th {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  #backgroundpic {
+    height: 63%;
+  }
+
+  #benifits-card h2 {
+    font-size: 2.5rem !important;
+  }
+  #benifits-card li {
+    font-size: 2rem !important;
+    padding-top: 1rem;
+  }
+
+  #smalltop {
+    margin-top: 3rem !important;
+  }
+
+  #content {
+    margin-top: 2rem;
+  }
+
+  #content1 {
+    width: 50%;
+    display: inline-flex;
+    margin-top: 3rem;
+  }
+
+  #icon {
+    width: 50%;
+    margin-top: -12rem;
+    margin-left: -2.2rem;
+    text-align: center;
+  }
+
+  #foterh2 h2 {
+    padding-top: 1rem !important;
+  }
+
+  #looking {
+    margin-top: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 35%;
+  }
+
+  #explore {
+    top: 12rem !important;
+  }
+  #explore h2 {
+    font-size: 2.8rem !important;
+  }
+
+  #benifits-card h2 {
+    font-size: 2.5rem !important;
+  }
+  #benifits-card li {
+    font-size: 2rem !important;
+    padding-top: 1rem;
+  }
+
+  #smalltop {
+    margin-top: 3rem !important;
+  }
+
+  #content {
+    margin-top: 2rem;
+  }
+
+  #content1 {
+    width: 50%;
+    display: inline-flex;
+    margin-top: 3rem;
+  }
+
+  #icon {
+    width: 50%;
+    margin-top: -12rem;
+    margin-left: -2.2rem;
+    text-align: center;
+  }
+
+  #foterh2 h2 {
+    padding-top: 1rem !important;
+  }
+
+  #looking {
+    margin-top: 1.4rem;
+  }
+}
+#iconin i {
+  font-size: 2rem;
+  padding-left: 2.4rem;
+}
+
+#footer p {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  margin-left: -23rem !important;
+}/*# sourceMappingURL=main.css.map */
